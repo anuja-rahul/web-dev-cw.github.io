@@ -1,55 +1,113 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+:root{
+    --primary-color: #0B2447;
+    --secondary-color: #19376D;
+    --third-color: #576CBC;
+    --fourth-color: #A5D7E8;
+}
+
 *, *::before, *::after {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
-    font-family: "Poppins", sans-serif;
-    background-color: #787878;
-}
-
-.logo {
-    width: 100px;
+    background-color: #080808;
 }
 
 header {
+    background: #fff;
     position: absolute;
     z-index: 9999;
     width: 100%;
-    padding: 0.9rem 0;
     top: 0;
     left: 0;
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+}
+
+.logo {
+    width: 40px;
+    transition: .5s;
+}
+
+
+/* Nav bar */
+
+.nav-container{
+    padding: 8px 5%;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(11, 36, 71, 0.8);
+    width: 100vw;
+    position: fixed;
 }
 
-header nav {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 0 2rem;
+nav {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
 }
 
-header ul {
-    display: flex;
+nav ul li{
+    display: inline-block;
     list-style: none;
-    align-items: center;
+    margin: 10px 20px;
+    transition: .5s;
 }
 
-header ul a {
+nav ul li a{
     text-decoration: none;
-    color: #fff;
-    padding: 0 1.5rem;
-    text-transform: uppercase;
-    font-weight: 300;
-    font-size: 0.83rem;
+    color: #efefef;
+    font-size: 12px;
+    position: relative;
+    border-radius: 30px;
+    padding: 5px;
+    transition: .5s;
 }
 
-.search a{
-    font-size: 1.05rem;
-    padding: 0 3rem;
+header ul li:hover,
+.logo:hover{
+    transform: translateY(-4px);
 }
+
+header ul li a:hover, 
+header ul li a.active {
+    background: var(--fourth-color);
+    color: var(--primary-color);
+}
+
+nav .nav-icon{
+    display: none;
+}
+
+/* Hero section */
+#hero{
+    height: 100vh;
+    padding-top: 70px;
+    background-color: #080808;
+    color: #efefef;
+}
+
+
+@media only screen and (max-width: 730px){
+    nav .nav-icon{
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul{
+        position: fixed;
+        top: 0;
+        right: 0;
+        background: var(--primary-color);
+        width: 200px;
+        height: 300vh;
+        padding-top: 50px;
+    }
+}
+
