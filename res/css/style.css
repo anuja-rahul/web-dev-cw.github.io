@@ -95,6 +95,7 @@ nav .nav-icon{
     background-color: #080808;
     color: #efefef;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
