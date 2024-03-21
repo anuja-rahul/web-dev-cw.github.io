@@ -58,14 +58,14 @@ nav ul li{
     text-transform: uppercase;
     display: inline-block;
     list-style: none;
-    margin: 10px 20px;
+    margin: 10px 10px;
     transition: .5s;
 }
 
 nav ul li a{
     text-decoration: none;
     color: #efefef;
-    font-size: 12px;
+    font-size: 11px;
     position: relative;
     border-radius: 30px;
     padding: 5px;
@@ -90,15 +90,19 @@ nav .nav-icon{
 
 /* Hero section */
 
+/* linear-gradient(160deg, 
+        rgba(165, 215, 232, 0.9), 
+        rgba(87, 108, 188, 0.8),  
+        rgba(165, 215, 232, 0.9))
+*/
+
 #hero{
     height: 100vh;
     padding-top: 70px;
     background: linear-gradient(160deg, 
-        rgba(11, 36, 71, 0.7), 
-        rgba(87, 108, 188, 0.5), 
-        rgba(165, 215, 232, 0.4), 
-        rgba(87, 108, 188, 0.5), 
-        rgba(11, 36, 71, 0.7)), url(../media/hero.jpg);
+        rgba(87, 108, 188, 0.8),   
+        rgba(165, 215, 232, 0.7)), 
+        url(../media/hero.jpg);
     background-size: cover ;
     color: #efefef;
     display: flex;
