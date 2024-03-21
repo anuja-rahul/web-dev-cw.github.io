@@ -44,6 +44,7 @@ header {
     background: rgba(11, 36, 71, 0.8);
     width: 100vw;
     position: fixed;
+    border-bottom: 1px solid var(--fourth-color);
 }
 
 nav {
@@ -92,12 +93,40 @@ nav .nav-icon{
 #hero{
     height: 100vh;
     padding-top: 70px;
-    background-color: #080808;
+    background: linear-gradient(160deg, 
+        rgba(11, 36, 71, 0.7), 
+        rgba(87, 108, 188, 0.5), 
+        rgba(165, 215, 232, 0.4), 
+        rgba(87, 108, 188, 0.5), 
+        rgba(11, 36, 71, 0.7)), url(../media/hero.jpg);
+    background-size: cover ;
     color: #efefef;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.title{
+    text-align: justify;
+    align-items: center;
+}
+
+.hero-btn{
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 30px;
+    margin-top: 15px;
+    border: 2px solid var(--primary-color);
+    background: var(--fourth-color);
+    color: var(--primary-color);
+    transition: all .5s;
+}
+
+.hero-btn:hover{
+    transform: translateY(-4px);
+    background: var(--secondary-color);
+    color: var(--fourth-color);
 }
 
 
