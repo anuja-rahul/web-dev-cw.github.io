@@ -117,14 +117,14 @@ nav .nav-icon{
     padding: 10px;
     border-radius: 30px;
     margin-top: 15px;
-    border: 2px solid var(--primary-color);
+    border: 1px solid var(--primary-color);
     background: var(--fourth-color);
     color: var(--primary-color);
     transition: all .5s;
 }
 
 .hero-btn:hover{
-    transform: translateY(-4px);
+    scale: 1.1;
     background: var(--secondary-color);
     color: var(--fourth-color);
 }
