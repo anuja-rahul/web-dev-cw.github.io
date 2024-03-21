@@ -12,6 +12,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -25,7 +26,7 @@ header {
     width: 100%;
     top: 0;
     left: 0;
-    background-image: url();
+    /* background-image: url(); */
     background-size: cover;
     background-position: center;
 }
@@ -117,6 +118,7 @@ nav .nav-icon{
 }
 
 .hero-btn{
+    text-decoration: none;
     font-weight: 500;
     padding: 10px;
     border-radius: 30px;
@@ -127,10 +129,39 @@ nav .nav-icon{
     transition: all .5s;
 }
 
+@keyframes slide-up-down{
+    0%, 100% {
+        transform: translateY(0); /* Start and end position */
+      }
+      50% {
+        transform: translateY(-10px); /* Middle position */
+      }
+}
+
 .hero-btn:hover{
-    scale: 1.1;
+    transform: translateY(-6px);
+    scale: 1.11;
     background: var(--secondary-color);
     color: var(--fourth-color);
+}
+
+.btn-holder{
+    color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-arrow-down{
+    margin-top: 12px;
+    animation: slide-up-down ease-in-out infinite 2.5s;
+}
+
+
+/* about */
+#about{
+    height: 100vh;
 }
 
 
