@@ -172,6 +172,8 @@ nav .nav-icon{
 }
 
 .btn-arrow-down{
+    font-size: 1.6rem;
+    color: var(--text-color);
     margin-top: 12px;
     animation: slide-up-down ease-in-out infinite 2.5s;
 }
