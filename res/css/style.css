@@ -143,6 +143,7 @@ nav .nav-icon{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
 
 .title{
@@ -195,16 +196,81 @@ nav .nav-icon{
 
 .title{
     font-size: 1.8rem;
+    margin-bottom: 30px;
 }
 
 .subtitle{
     font-size: 1.2rem;
 }
 
+#typewriter {
+    font-size: 1.5rem;
+    padding: 10px;
+    width: auto; 
+    height: 50px;
+}
+
 
 /* about */
 #about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
+    background: linear-gradient(160deg, 
+        rgba(150, 212, 245, 0.65),
+        rgba(165, 215, 232, 0.2)), 
+        url(../media/about.jpg);
+    background-size: cover ;
+}
+
+#about .title{
+    color: var(--text-color);
+    line-height: 1.1;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    padding: 0 30px;
+}
+
+.mission-img{
+    min-width: 25vw;
+    min-height: 50vh;
+    max-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 48px;
+    background: linear-gradient(rgba(179, 214, 220, 0.1), rgba(179, 214, 220, 0.1)), url(../media/about-img.jpg) center no-repeat;
+    background-size: cover;
+    box-shadow:  25px 25px 53px #4a4a4a;
+}
+
+.container img{
+    height: 50vh;
+}
+
+.mission-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    min-width: 40vw;
+    max-width: auto;
+    min-height: 50vh;
+    height: auto;
+    max-height: 80vh;
+    padding: 30px;
+    margin-left: 30px;
+    border-radius: 48px;
+    background: rgba(203, 219, 222, 0.8);
+    box-shadow:  25px 25px 53px #4a4a4a;
+    overflow: auto;
 }
 
 
@@ -224,7 +290,7 @@ nav .nav-icon{
         width: 200px;
         height: 100vh;
         padding-top: 50px;
-        z-index: 2;
+        z-index: 3;
         border: 2px solid var(--third-color);
     }
 
