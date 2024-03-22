@@ -1,6 +1,8 @@
 # web-dev-cw
 Demo website developed for a coursework.
 
+<!-- 
+
 ```mermaid
 
 pie
@@ -8,3 +10,6 @@ pie
     "food" : 60
     "water" : 40
 ```
+
+
+-->
