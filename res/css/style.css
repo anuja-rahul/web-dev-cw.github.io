@@ -5,6 +5,7 @@
     --secondary-color: #19376D;
     --third-color: #576CBC;
     --fourth-color: #A5D7E8;
+    --text-color: #efefef;
 }
 
 *, *::before, *::after {
@@ -46,6 +47,8 @@ header {
     width: 100vw;
     position: fixed;
     border-bottom: 1px solid var(--fourth-color);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 nav {
@@ -53,6 +56,12 @@ nav {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+nav ul{
+    transition: .5s;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
 }
 
 nav ul li{
@@ -65,8 +74,8 @@ nav ul li{
 
 nav ul li a{
     text-decoration: none;
-    color: #efefef;
-    font-size: 11px;
+    color: var(--text-color);
+    font-size: 0.9rem;
     position: relative;
     border-radius: 30px;
     padding: 5px;
@@ -84,8 +93,17 @@ header ul li a.active {
     color: var(--primary-color);
 }
 
+.nav-icon{
+    transition: .3s;
+}
+
 nav .nav-icon{
     display: none;
+}
+
+.nav-icon:hover{
+    color: var(--fourth-color);
+    scale: 1.11;
 }
 
 
@@ -105,7 +123,7 @@ nav .nav-icon{
         rgba(165, 215, 232, 0.7)), 
         url(../media/hero.jpg);
     background-size: cover ;
-    color: #efefef;
+    color: var(--text-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -132,10 +150,10 @@ nav .nav-icon{
 @keyframes slide-up-down{
     0%, 100% {
         transform: translateY(0); /* Start and end position */
-      }
-      50% {
+    }
+    50% {
         transform: translateY(-10px); /* Middle position */
-      }
+    }
 }
 
 .hero-btn:hover{
@@ -158,6 +176,14 @@ nav .nav-icon{
     animation: slide-up-down ease-in-out infinite 2.5s;
 }
 
+.title{
+    font-size: 1.8rem;
+}
+
+.subtitle{
+    font-size: 1.2rem;
+}
+
 
 /* about */
 #about{
@@ -165,20 +191,45 @@ nav .nav-icon{
 }
 
 
-@media only screen and (max-width: 730px){
-    nav .nav-icon{
+@media only screen and (max-width: 980px){
+    nav .nav-icon, 
+    .nav-icon{
         display: block;
-        font-size: 25px;
+        font-size: 1.6rem;
     }
 
     nav ul{
         position: fixed;
         top: 0;
-        right: 0;
+        right: -200px;
         background: var(--primary-color);
         width: 200px;
-        height: 300vh;
+        height: 100vh;
         padding-top: 50px;
+        z-index: 2;
+        border: 2px solid var(--third-color);
     }
+
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+
+    nav .nav-icon{
+        display: block;
+        color: var(--text-color);
+    }
+
+    nav ul .nav-icon{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .nav-icon{
+        cursor: pointer;
+    }
+
 }
 

@@ -18,7 +18,7 @@
         <div class="nav-container">
             <nav>
                 <img src="res/media/logo.png" alt="logo" class="logo">
-                <ul>
+                <ul id="sidemenu">
                     <li><a href="#hero" class="active">Home</a></li>
                     <li><a href="#about">About us</a></li>
                     <li><a href="#">Gallery</a></li>
@@ -27,17 +27,16 @@
                     <li><a href="#">Sitemap</a></li>
                     <li><a href="#">Login | Signup</a></li>
                     <li><a href="#">Learn More</a></li>
-    
-                    <span class="material-symbols-outlined nav-icon">menu</span>
-                    <span class="material-symbols-outlined nav-icon">close</span>
+                    <i class="material-symbols-outlined nav-icon close" onclick="closemenu()">close</i>
                 </ul>
+                <i class="material-symbols-outlined nav-icon menu" onclick="openmenu()">menu</i>
             </nav>
         </div>
     </header>
 
     <section id="hero">
         <div class="title">
-            <h1>Hello world !</h1>
+            <h1>Welcome to corels !</h1>
         </div>
         <div class="subtitle">
             <h2>This is a subtitle.</h2>
