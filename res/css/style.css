@@ -147,8 +147,16 @@ nav .nav-icon{
 }
 
 .title{
-    text-align: justify;
+    text-align: center;
     align-items: center;
+    padding-bottom: 5px;
+}
+
+#typewriter{
+    text-align: center;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
 }
 
 .hero-btn{
