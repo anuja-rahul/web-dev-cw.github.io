@@ -15,9 +15,9 @@
 ```mermaid
 
 pie title Project content
-    "HTML" : 31.8
-    "CSS" : 63.2
-    "JS" : 5
+    "HTML" : 30.7
+    "CSS" : 57.3
+    "JS" : 12
 
 ```
 
