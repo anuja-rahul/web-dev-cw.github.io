@@ -18,7 +18,7 @@
 
 body {
     background-color: #080808;
-    cursor: url('../media/curser.png'),auto;
+    cursor: url('../media/curser.png'), auto;
 }
 
 /*
@@ -194,6 +194,13 @@ nav .nav-icon{
     margin-bottom: 30px;
     text-align: center;
     align-items: center;
+    transition: .4s;
+    
+}
+
+.title:hover{
+    text-shadow: 12px 10px 10px rgba(11, 36, 71, 0.9);
+    transform: translateY(-3px);
 }
 
 .subtitle{
@@ -218,10 +225,12 @@ nav .nav-icon{
     align-items: center;
     height: 100vh;
     background: linear-gradient(160deg, 
-        rgba(150, 212, 245, 0.65),
-        rgba(165, 215, 232, 0.2)), 
+        rgba(190, 213, 225, 0.85),
+        rgba(149, 208, 226, 0.2)), 
         url(../media/about.jpg);
     background-size: cover ;
+    box-shadow:  0 20px 60px inset rgba(11, 36, 71, 0.9),
+    20px 10px 60px inset rgba(255, 255, 255, 0.9)
 }
 
 #about .title{
@@ -234,7 +243,7 @@ nav .nav-icon{
     align-items: center;
     justify-content: space-between;
     width: 90%;
-    padding: 0 30px;
+    padding: 0 35px;
 }
 
 .mission-img{
@@ -247,7 +256,9 @@ nav .nav-icon{
     border-radius: 48px;
     background: linear-gradient(rgba(179, 214, 220, 0.1), rgba(179, 214, 220, 0.1)), url(../media/about-img.jpg) center no-repeat;
     background-size: cover;
-    box-shadow:  25px 25px 53px #4a4a4a;
+    box-shadow:  10px 10px 20px #4a4a4a;
+    transition: .5s;
+    
 }
 
 .container img{
@@ -258,18 +269,25 @@ nav .nav-icon{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: 500;
     min-width: 40vw;
     max-width: auto;
     min-height: 50vh;
     height: auto;
     max-height: 80vh;
+    font-size: 1rem;
     padding: 30px;
     margin-left: 30px;
     border-radius: 48px;
     background: rgba(203, 219, 222, 0.8);
-    box-shadow:  25px 25px 53px #4a4a4a;
     overflow: auto;
+    transition: .5s;
+    font-weight: 500;
+    box-shadow:  15px 15px 30px #4a4a4a;
+}
+
+.mission-img:hover,
+.mission-content:hover{
+    scale: 1.01;
 }
 
 
