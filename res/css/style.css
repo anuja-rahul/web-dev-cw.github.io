@@ -146,19 +146,6 @@ nav .nav-icon{
     z-index: 1;
 }
 
-.title{
-    text-align: center;
-    align-items: center;
-    padding-bottom: 5px;
-}
-
-#typewriter{
-    text-align: center;
-    align-items: center;
-    margin-bottom: 20px;
-    font-size: 1.2rem;
-}
-
 .hero-btn{
     text-decoration: none;
     font-weight: 500;
@@ -205,19 +192,23 @@ nav .nav-icon{
 .title{
     font-size: 1.8rem;
     margin-bottom: 30px;
+    text-align: center;
+    align-items: center;
 }
 
 .subtitle{
     font-size: 1.2rem;
 }
 
-#typewriter {
-    font-size: 1.5rem;
+#typewriter{
+    text-align: center;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
     padding: 10px;
     width: auto; 
     height: 50px;
 }
-
 
 /* about */
 #about{
