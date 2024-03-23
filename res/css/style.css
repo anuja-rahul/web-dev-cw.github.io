@@ -275,6 +275,14 @@ nav .nav-icon{
 
 @media only screen and (max-width: 990px){
 
+    .title{
+        font-size: 1.4rem;
+    }
+
+    #typewriter{
+        font-size: 1.1rem;
+    }
+
     nav .nav-icon, 
     .nav-icon{
         display: block;
