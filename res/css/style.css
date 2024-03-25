@@ -17,6 +17,7 @@
 }
 
 body {
+    width: 100vw;
     background-color: #080808;
     cursor: url('../media/curser.png'), auto;
 }
@@ -131,6 +132,7 @@ nav .nav-icon{
 */
 
 #hero{
+    width: 100vw;
     height: 100vh;
     padding-top: 70px;
     background: linear-gradient(160deg, 
@@ -219,18 +221,16 @@ nav .nav-icon{
 
 /* about */
 #about{
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(160deg, 
-        rgba(190, 213, 225, 0.85),
-        rgba(149, 208, 226, 0.2)), 
-        url(../media/about.jpg);
+    background: linear-gradient(160deg, rgba(190, 213, 225, 0.85), rgba(149, 208, 226, 0.2)), url(../media/about.jpg);
     background-size: cover ;
     box-shadow:  0 20px 60px inset rgba(11, 36, 71, 0.9),
-    20px 10px 60px inset rgba(255, 255, 255, 0.9)
+    20px 10px 60px inset rgba(255, 255, 255, 0.9);
 }
 
 #about .title{
@@ -290,7 +290,85 @@ nav .nav-icon{
     scale: 1.01;
 }
 
+/* Footer */
+footer{
+    height: 60vh;
+    color: #000;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(164, 180, 188, 0.85), rgba(108, 117, 119, 0.4)), url(../media/footer1.jpg);    
+    background-size: cover;
+    box-shadow:  20px 20px 40px inset rgba(1, 24, 34, 0.9);
+}
 
+footer .footer-content{
+    height: 50vh;
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+}
+
+footer .organic-one{
+    width: 50%;
+    display: inline-grid;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(30deg, rgba(71, 197, 219, 0.6), rgba(51, 69, 184, 0.7));    
+    animation: morph 8s ease-in-out infinite;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    border: 2px solid rgba(71, 197, 219, 0.6);
+    height: 350px;
+    transition: all .5s ease-in-out;
+    width: 350px;
+    z-index: 5;
+}
+
+footer .organic-one:hover,
+footer .organic-one h2:hover{
+    scale: 1.015;
+    filter: hue-rotate(-35deg);   
+}
+
+footer .footer-content .information{
+    text-align: justify;
+    max-height: 50vh;
+    height: auto;
+    margin-left: 10%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    background: rgba(203, 219, 222, 0.8);
+    border-radius: 50px;
+    padding: 20px 50px;
+    box-shadow:  15px 15px 30px #353535;
+    transition: .4s;
+}
+
+footer .footer-content .information:hover{
+    scale: 1.01;
+}
+
+@keyframes morph {
+    0% {
+        border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
+    } 
+
+    50% {
+        border-radius:  30% 60% 70% 40% / 50% 60% 30% 60%;
+    }
+    
+    100% {
+        border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
+    } 
+}
+
+/* Small Screens */
 @media only screen and (max-width: 990px){
 
     .title{

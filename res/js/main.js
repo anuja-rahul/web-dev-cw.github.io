@@ -30,7 +30,7 @@ function type() {
     } else {
         setTimeout(erase, 1000);
     }
-}
+};
 
 function erase() {
     if (charIndex > 0) {
@@ -42,6 +42,6 @@ function erase() {
         txtIndex = (txtIndex + 1) % textArray.length;
         setTimeout(type, 500);
     }
-}
+};
 
 type();
