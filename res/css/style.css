@@ -269,8 +269,9 @@ nav .nav-icon{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center justify;
     min-width: 40vw;
-    max-width: auto;
+    width: auto;
     min-height: 50vh;
     height: auto;
     max-height: 80vh;
@@ -279,9 +280,9 @@ nav .nav-icon{
     margin-left: 30px;
     border-radius: 48px;
     background: rgba(203, 219, 222, 0.8);
-    overflow: auto;
     transition: .5s;
     font-weight: 500;
+    overflow: auto;
     box-shadow:  15px 15px 30px #4a4a4a;
 }
 
@@ -305,39 +306,16 @@ footer{
 
 footer .footer-content{
     height: 50vh;
-    width: 90vw;
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: auto;
-}
-
-footer .organic-one{
-    width: 50%;
-    display: inline-grid;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(30deg, rgba(71, 197, 219, 0.6), rgba(51, 69, 184, 0.7));    
-    animation: morph 8s ease-in-out infinite;
-    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-    border: 2px solid rgba(71, 197, 219, 0.6);
-    height: 350px;
-    transition: all .5s ease-in-out;
-    width: 350px;
-    z-index: 5;
-}
-
-footer .organic-one:hover,
-footer .organic-one h2:hover{
-    scale: 1.015;
-    filter: hue-rotate(-35deg);   
 }
 
 footer .footer-content .information{
-    text-align: justify;
-    max-height: 50vh;
-    height: auto;
-    margin-left: 10%;
+    text-align: center justify;
+    height: 50vh;
+    margin: 5%;
     width: 50%;
     display: flex;
     justify-content: center;
@@ -352,20 +330,6 @@ footer .footer-content .information{
 
 footer .footer-content .information:hover{
     scale: 1.01;
-}
-
-@keyframes morph {
-    0% {
-        border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
-    } 
-
-    50% {
-        border-radius:  30% 60% 70% 40% / 50% 60% 30% 60%;
-    }
-    
-    100% {
-        border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
-    } 
 }
 
 /* Small Screens */
@@ -416,6 +380,23 @@ footer .footer-content .information:hover{
 
     .nav-icon{
         cursor: pointer;
+    }
+
+    footer .footer-content .information,
+    .mission-content{
+        padding: 15px 10px;
+        margin: 5%;
+        
+    }
+
+    .mission-content p{
+        white-space: wrap;
+        overflow: auto;
+    }
+
+    .mission-content p{
+        white-space: wrap;
+        overflow: auto;
     }
 
 }
