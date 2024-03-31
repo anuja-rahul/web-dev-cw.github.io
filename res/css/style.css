@@ -227,6 +227,7 @@ nav .nav-icon{
 }
 
 /* mission */
+
 #about{
     width: 100vw;
     display: flex;
@@ -301,7 +302,8 @@ nav .nav-icon{
 }
 
 
-/* all-content gallery shop*/
+/* all-content gallery shop team sitemap*/
+
 #all-content{
     flex-direction: column;
     display: flex;

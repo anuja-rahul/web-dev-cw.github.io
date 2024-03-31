@@ -7,17 +7,10 @@
 #### Demo website developed for a coursework.
 
 ---
-![Mermaid](https://img.shields.io/badge/Mermaid-000?style=for-the-badge&logo=mermaid)
 ![Markdown](https://img.shields.io/badge/-Markdown-000?style=for-the-badge&logo=markdown)
 
 
-```mermaid
+![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=anuja-rahul&repo=web-dev-cw.github.io\&theme=nightowl)
 
-pie title Project content
-    "HTML" : 30.7
-    "CSS" : 57.3
-    "JS" : 12
-
-```
 
 ---
