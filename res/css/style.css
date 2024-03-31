@@ -155,6 +155,7 @@ nav .nav-icon{
 }
 
 .hero-btn{
+    font-size: 1.2rem;
     text-decoration: none;
     font-weight: 500;
     padding: 10px;
@@ -307,8 +308,10 @@ nav .nav-icon{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(180deg, rgba(12, 55, 76, 0.4), rgba(118, 205, 225, 0.4)), url(../media/feedback.jpg) center no-repeat;
+    background: linear-gradient(180deg, rgba(12, 55, 76, 0.4), rgba(118, 205, 225, 0.4)), url(../media/explore.jpg) center no-repeat;
     color: var(--text-color);
+    box-shadow:  0 20px 60px inset rgba(11, 36, 71, 0.9),
+    20px 10px 60px inset rgba(81, 81, 81, 0.6);
 }
 
 #all-content .title{
