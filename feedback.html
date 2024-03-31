@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hover Effect</title>
+<style>
+  .trigger:hover + .response {
+    /* CSS rules for the response class when the trigger class is hovered */
+    color: red;
+    font-weight: bold;
+  }
+
+  .response {
+    /* Default CSS rules for the response class */
+    color: black;
+    font-weight: normal;
+  }
+</style>
+</head>
+<body>
+
+<p class="trigger">Hover over me!</p>
+<p class="response">I will respond when you hover over the trigger.</p>
+
+</body>
+</html>

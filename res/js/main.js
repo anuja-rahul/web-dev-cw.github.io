@@ -8,12 +8,6 @@ function closeMenu(){
     sidemenu.style.right = "-200px";
 };
 
-document.addEventListener('mousemove', function(e) {
-    var cursor = document.querySelector('.custom-cursor');
-    cursor.style.left = e.pageX + 'px';
-    cursor.style.top = e.pageY + 'px';
-});
-
 const textArray = ["Our mission is to conserve the life below water.", 
                     "Together we can achieve this goal.", 
                     "Being aware of the problem is the first step to the solution."
@@ -43,5 +37,27 @@ function erase() {
         setTimeout(type, 500);
     }
 };
+
+// https://forum.freecodecamp.org/t/active-navigation-bar-scroll/332875/7
+
+let mainNavLinks = document.querySelectorAll(".page-link");
+let mainSections = document.querySelectorAll(".sections");
+
+window.addEventListener("scroll", event => {
+    let fromTop = window.scrollY;
+
+    mainNavLinks.forEach(link => {
+        let section = document.querySelector(link.hash);
+
+    if (
+        section.offsetTop <= fromTop + 55 &&
+        section.offsetTop + section.offsetHeight > fromTop + 55
+    ) {
+        link.classList.add("active");
+    } else {
+        link.classList.remove("active");
+    }
+    });
+});
 
 type();
