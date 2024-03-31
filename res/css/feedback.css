@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --primary-color: #0B2447;
+    --secondary-color: #c4c9d2;
+    --third-color: #576CBC;
+    --fourth-color: #A5D7E8;
+    --text-color: #efefef;
+}
+
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100vw;
+    background-color: #080808;
+    cursor: url('../media/curser.png'), auto;
+}
+
+#feedback{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#feedback .title{
+    font-size: 2.8rem;
+    font-weight: 700;
+}

@@ -3,25 +3,74 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hover Effect</title>
-<style>
-  .trigger:hover + .response {
-    /* CSS rules for the response class when the trigger class is hovered */
-    color: red;
-    font-weight: bold;
-  }
-
-  .response {
-    /* Default CSS rules for the response class */
-    color: black;
-    font-weight: normal;
-  }
-</style>
+<meta property="og:title" content="Corals">
+<meta property="og:description" content="A demo website for the web coursework">
+<meta property="og:image" content="https://anuja-rahul.github.io/web-dev-cw.github.io/res/media/logo.png">
+<meta property="og:url" content="https://anuja-rahul.github.io/web-dev-cw.github.io/">
+<title>Feedback</title>
+<link rel="icon" href="res/media/logo.png" type="image/x-icon">
+<link rel="stylesheet" href="res/css/style.css">
+<link rel="stylesheet" href="res/css/feedback.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
 
-<p class="trigger">Hover over me!</p>
-<p class="response">I will respond when you hover over the trigger.</p>
+  <!--Header-->
+
+  <header>
+    <div class="nav-container">
+        <nav>
+            <img src="res/media/logo.png" alt="logo" class="logo">
+            <ul id="sidemenu">
+              <li><a class="page-link" href="index.html">Home</a></li>
+              <li><a class="page-link" href="index.html">our mission</a></li>
+              <li><a class="page-link" href="index.html">Gallery</a></li>
+              <li><a class="page-link" href="index.html">Shop</a></li>
+              <li><a class="page-link" href="index.html">Team</a></li>
+              <li><a class="page-link" href="index.html">Sitemap</a></li>
+              <li><a class="page-link active" href="#feedback">FeedBack</a></li>
+              <li><a class="page-link" href="index.html">Contact us</a></li>
+              <li><a class="page-link" href="content.html">Content</a></li>
+              <li><a class="page-link" href="index.html">Login | Signup</a></li>
+                <i class="material-symbols-outlined nav-icon close" onclick="closeMenu()">close</i>
+            </ul>
+            <i class="material-symbols-outlined nav-icon menu" onclick="openMenu()">menu</i>
+        </nav>
+    </div>
+</header>
+
+  <!--feedback-->
+  <section id="feedback" class="sections">
+    <div class="title">FeedBack Form</div>
+
+  </section>
+  <!--Footer-->
+
+  <footer>
+    <div class="footer-content">
+        <div class="information">
+            <ul>
+                <li><a class="page-link" href="index.html">Home</a></li>
+                <li><a class="page-link" href="index.html">our mission</a></li>
+                <li><a class="page-link" href="index.html">Gallery</a></li>
+                <li><a class="page-link" href="index.html">Shop</a></li>
+                <li><a class="page-link" href="index.html">Team</a></li>
+                <li><a class="page-link" href="index.html">Sitemap</a></li>
+                <li><a class="page-link" href="#feedback">FeedBack</a></li>
+                <li><a class="page-link" href="index.html">Contact us</a></li>
+                <li><a class="page-link" href="content.html">Content</a></li>
+                <li><a class="page-link" href="index.html">Login | Signup</a></li>
+            </ul>
+        </div>
+        <div class="information">
+            <p> Made with &hearts; by #teamDcoders
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+<script src="res/js/main.js"></script>
 
 </body>
 </html>
