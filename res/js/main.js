@@ -8,6 +8,8 @@ function closeMenu(){
     sidemenu.style.right = "-200px";
 };
 
+// https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_typewriter
+
 const textArray = ["Our mission is to conserve the life below water.", 
                     "Together we can achieve this goal.", 
                     "Being aware of the problem is the first step to the solution."

@@ -322,8 +322,12 @@ nav .nav-icon{
     background: #000;
 }
 
+#all-content label{
+    backdrop-filter: blur(2px);
+}
+
 .wrapper{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -331,14 +335,16 @@ nav .nav-icon{
 }
 
 #all-content .container{
-    height: 400px;
+    width: auto;
+    height: 60vh;
     display: flex;
     flex-wrap: nowrap;
     justify-content: start;
 }
 
 .card{
-    width: 80px;
+    height: auto;
+    width: 5vw;
     border-radius: 2rem;
     background-size: cover;
     overflow: hidden;
@@ -353,17 +359,22 @@ nav .nav-icon{
     color: white;
     display: flex;
     flex-wrap: nowrap;
+    height: 60%;
+    width: auto;
 }
 
 .card > .row > .icon{
+    height: 60px;
+    width: auto;
+    min-width: 60px;
     background: #223;
     color: white;
     border-radius: 50%;
-    width: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 15px;
+    border: 2px solid var(--third-color);
 }
 
 .card > .row > .description{
@@ -371,14 +382,83 @@ nav .nav-icon{
     justify-content: center;
     flex-direction: column;
     overflow: hidden;
-    height: 80px;
-    width: 520px;
+    height: 60%;
+    min-width: auto;
+    max-width: 30vw;
     opacity: 0;
     transform: translateY(30px);
     transition-delay: .3s;
     transition: all .3s ease;
+    backdrop-filter: blur(.5px);
 }
 
+.discover{
+    padding: 10px;
+    color: var(--text-color);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    max-width: 50%;
+    border-radius: 25px;
+    border: 2px solid var(--fourth-color);
+    transition: .5s;
+    background: rgba(8, 16, 158, 0.4);
+    backdrop-filter: blur(5px);
+    scale: 0.9;
+}
+
+.discover:hover{
+    background: rgba(84, 178, 222, 0.6);
+    border: 2px solid var(--secondary-color);
+    scale: 1;
+}
+
+.description p{
+    width: auto;
+    overflow: auto;
+    color: var(--text-color);
+    padding-top: 5px;
+}
+
+.description h4{
+    text-transform: uppercase;
+}
+
+#all-content .container input{
+    display: none;
+}
+
+#all-content .container input:checked + label{
+    width: 40vw;
+}
+
+#all-content .container input:checked + label .description{
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.card[for="c1"] {
+    background: linear-gradient(30deg, rgba(12, 55, 76, 0.3), rgba(118, 205, 225, 0.3)), url(../media/c1.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.card[for="c2"] {
+    background: linear-gradient(30deg, rgba(12, 55, 76, 0.3), rgba(118, 205, 225, 0.3)), url(../media/c2.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.card[for="c3"] {
+    background: linear-gradient(30deg, rgba(12, 55, 76, 0.4), rgba(118, 205, 225, 0.3)), url(../media/c3.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.card[for="c4"] {
+    background: linear-gradient(30deg, rgba(12, 55, 76, 0.3), rgba(118, 205, 225, 0.3)), url(../media/c4.jpg) center no-repeat;
+    background-size: cover;
+}
 
 /* FeedBack */
 
@@ -473,7 +553,7 @@ footer .footer-content .information{
     align-items: center;
     overflow: auto;
     background: rgba(12, 19, 69, 0.5);
-    border-radius: 50px;
+    border-radius: 60px;
     padding: 10px 20px;
     box-shadow:  15px 15px 30px #353535;
     transition: .4s;
