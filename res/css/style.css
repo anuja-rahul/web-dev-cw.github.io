@@ -154,6 +154,11 @@ nav .nav-icon{
     z-index: 1;
 }
 
+.hero-logo{
+    width: 10vw;
+    min-width: 100px;
+}
+
 .hero-btn{
     font-size: 1.2rem;
     text-decoration: none;
@@ -398,6 +403,7 @@ nav .nav-icon{
 }
 
 .discover{
+    text-align: center;
     padding: 10px;
     color: var(--text-color);
     text-decoration: none;
@@ -411,7 +417,6 @@ nav .nav-icon{
     border: 2px solid var(--fourth-color);
     transition: .5s;
     background: rgba(8, 16, 158, 0.4);
-    backdrop-filter: blur(5px);
     scale: 0.9;
 }
 
@@ -547,7 +552,7 @@ footer .footer-content{
 
 footer .footer-content .information{
     color: var(--text-color);
-    text-align: center justify;
+    text-align: center;
     max-height: 50vh;
     height: auto;
     margin: 5%;
@@ -566,6 +571,10 @@ footer .footer-content .information{
 
 footer .footer-content .information:hover{
     scale: 1.01;
+}
+
+footer .footer-content .information p{
+    text-align: center;
 }
 
 /* Small Screens */
@@ -630,9 +639,27 @@ footer .footer-content .information:hover{
         overflow: auto;
     }
 
-    .mission-content p{
+    .mission-content p,
+    .footer-content{
         white-space: wrap;
         overflow: auto;
+        font-size: 0.8rem;
+    }
+
+    .card > .row > .description{
+        font-size: 0.7rem;
+    }
+
+    #feedback .title h1{
+        font-size: 1.4rem;
+    }
+
+    #feedback .subtitle p{
+        font-size: 0.7rem;
+    }
+
+    #feedback .content{
+        font-size: 0.7rem;
     }
 
 }

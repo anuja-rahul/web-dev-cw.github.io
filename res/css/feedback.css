@@ -22,14 +22,18 @@ body {
     cursor: url('../media/curser.png'), auto;
 }
 
-#feedback{
+#feedback-form{
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    flex-direction: column;
+    background: linear-gradient(180deg, rgba(12, 55, 76, 0.4), rgba(118, 205, 225, 0.4)), url(../media/feedback-form.jpg) center no-repeat;
+    background-size: cover;
+    color: var(--text-color); 
 }
 
-#feedback .title{
+#feedback-form .title{
     font-size: 2.8rem;
     font-weight: 700;
 }
