@@ -69,6 +69,8 @@ body {
     justify-content: center;
     align-items: center;
     text-align: justify;
+    background: linear-gradient(180deg, rgba(12, 55, 76, 0.4), rgba(15, 25, 58, 0.4));
+    backdrop-filter: blur(3px);
 }
 
 #feedback-form .feedback-container form input:invalid {
@@ -85,6 +87,14 @@ body {
     min-height: 25px;
     border: 3px solid var(--secondary-color);
     padding: 6px;
+    transition: .3s;
+}
+
+#feedback-form .feedback-container form label:hover,
+#feedback-form .feedback-container form textarea:hover,
+#feedback-form .feedback-container form .external:hover,
+#feedback-form .feedback-container form select:hover{
+    transform: translateY(-3px);
 }
 
 #feedback-form .feedback-container form .external{
@@ -97,6 +107,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 0;
+    transition: .4s;
 }
 
 #feedback-form .feedback-container form .radio-container{
@@ -121,11 +132,13 @@ body {
 }
 
 #feedback-form .feedback-container select{
-    width: 30%;
+    max-width: 30%;
     border-radius: 30px;
     min-height: 25px;
     border: 3px solid var(--secondary-color);
     padding: 6px 10px;
+    min-width: 200px;
+    transition: .3s;
 }
 
 #feedback-form .feedback-container form .send-btn{
