@@ -41,15 +41,143 @@
 
   <!--feedback-->
   <section id="feedback-form" class="sections">
-    <div class="title">Feedback Form</div>
-    <div class="feedback-container">
-      <form action="" class="feedback-form">
-        <legend>* required fields</legend>
-        <label for="name"><div class="label">Enter your name: &emsp; </div> 
-          <input type="text" name="name" id="name" placeholder="name" required>
-      </label>
 
+    <div class="title">Feedback Form</div>
+
+    <div class="feedback-container">
+
+      <form id="form-feedback" class="feedback-form" method="POST">
+        <legend>* required fields</legend>
+
+        <input type="hidden" name="access_key" value="04e4dda3-31e3-41dd-b406-5f90216ca523">
+
+        <label for="name"><div class="label">*Enter your name: &emsp; </div> 
+          <input type="text" name="name" id="name" placeholder="&emsp;name" required>
+        </label>
+
+        <label for="email"><div class="label">*Enter your email: &emsp; </div> 
+          <input type="email" name="email" id="email" placeholder="&emsp;your email" required placeholder="Email">
+        </label>
+
+        <label class="external">*Was this your first time visiting ?</label>
+        <div class="radio-container">
+          <label for="yes"><div class="label">Yes &emsp; </div> 
+            <input type="radio" name="visited" id="yes" value="yes" required>
+          </label>
+
+          <label for="no"><div class="label">No &emsp; </div> 
+            <input type="radio" name="visited" id="no" value="no" required>
+          </label>
+        </div>
+
+        <label class="external">*Was this website informative and easy to navigate through ?</label>
+        <div class="radio-container">
+          <label for="yes"><div class="label">Yes &emsp; </div> 
+            <input type="radio" name="navigate" id="yes" value="yes" required>
+          </label>
+
+          <label for="no"><div class="label">No &emsp; </div> 
+            <input type="radio" name="navigate" id="no" value="no" required>
+          </label>
+        </div>
+
+        <div class="textarea-container">
+          <label>
+            <div class="label">*if "No" suggest any improvements for the future: &emsp; 
+            </div>
+          </label>
+            <textarea name="improvements" id="improvements" rows="5" cols="30" placeholder="&emsp; Your suggestions"></textarea>
+        </div>
+
+        <label class="external">
+          *How satisfied are you with our services ? , Choose from 0 to 10, with 1 being "Not satisfied at all!"
+          and 10 being "Extremely satified!"
+        </label>
+
+        <div class="radio-rate-container radio-container">
+
+          <label for="one"><div class="label">1 </div> 
+            <input type="radio" name="rate" id="one" value="1" required>
+          </label>
+
+          <label for="two"><div class="label">2 </div> 
+            <input type="radio" name="rate" id="two" value="2" required>
+          </label>
+
+          <label for="three"><div class="label">3 </div> 
+            <input type="radio" name="rate" id="three" value="3" required>
+          </label>
+
+          <label for="four"><div class="label">4 </div> 
+            <input type="radio" name="rate" id="four" value="4" required>
+          </label>
+
+          <label for="five"><div class="label">5 </div> 
+            <input type="radio" name="rate" id="five" value="5" required>
+          </label>
+
+          <label for="six"><div class="label">6 </div> 
+            <input type="radio" name="rate" id="six" value="6" required>
+          </label>
+
+          <label for="seven"><div class="label">7 </div> 
+            <input type="radio" name="rate" id="seven" value="7" required>
+          </label>
+
+          <label for="eight"><div class="label">8 </div> 
+            <input type="radio" name="rate" id="eight" value="8" required>
+          </label>
+
+          <label for="nine"><div class="label">9 </div> 
+            <input type="radio" name="rate" id="nine" value="9" required>
+          </label>
+
+          <label for="ten"><div class="label">10</div> 
+            <input type="radio" name="rate" id="ten" value="10" required>
+          </label>
+        </div>
+
+        <label class="external">
+          *Would you recommend our services ?
+        </label>
+
+        <div class="radio-container">
+          <label for="yes"><div class="label">Yes &emsp; </div> 
+            <input type="radio" name="recommend" id="yes" value="yes" required>
+          </label>
+
+          <label for="no"><div class="label">No &emsp; </div> 
+            <input type="radio" name="recommend" id="no" value="no" required>
+          </label>
+        </div>
+
+        <label class="external">
+          *Would you like to receive updates about the website and any offers ?
+        </label>
+
+        <div class="radio-container">
+          <select name="updates" id="updates" required>
+            <option value="email" selected>Yes - via email</option>
+            <option value="phone">Yes - via phone</option>
+            <option value="ad">Yes - via advertisement</option>
+          </select>
+        </div>
+
+        <div class="textarea-container">
+          <label>
+            <div class="label">Do you have any additional questions or requests ? &emsp; 
+            </div>
+          </label>
+            <textarea name="questions" id="questions" rows="5" cols="30" placeholder="&emsp; Questions and requests"></textarea>
+        </div>
+
+        <div class="textarea-container">
+          <a class="send-btn" onclick="previewForm()">Preview Form</a>
+          <button class="send-btn" type="submit">Submit Form</button>
+          <div id="result"></div>
+        </div>
       </form>
+      <div id="preview-data"></div>
     </div>
   </section>
 
@@ -81,6 +209,7 @@
 
 
 <script src="res/js/main.js"></script>
+<script src="res/js/feedback.js"></script>
 
 </body>
 </html>
