@@ -199,7 +199,8 @@ body {
         font-size: 0.7rem;
     }
 
-    #feedback-form .feedback-container form input{
+    #feedback-form .feedback-container form input,
+    #feedback-form .feedback-container form textarea{
         max-width: 30%;
     }
 }
