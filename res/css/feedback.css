@@ -2,7 +2,7 @@
 
 :root{
     --primary-color: #0B2447;
-    --secondary-color: #c4c9d2;
+    --secondary-color: #19376D;
     --third-color: #576CBC;
     --fourth-color: #A5D7E8;
     --text-color: #efefef;
@@ -36,4 +36,18 @@ body {
 #feedback-form .title{
     font-size: 2.8rem;
     font-weight: 700;
+}
+
+#feedback-form .feedback-container legend{
+    text-align: center;
+    padding: 10px 0;
+    color: #d20303;
+    text-shadow: 5px 4px 4px rgba(11, 36, 71, 1);
+}
+
+#feedback-form .feedback-container form{
+    border: 4px solid var(--primary-color);
+    border-radius: 30px;
+    padding: 15px;
+    width: 80vw;
 }
