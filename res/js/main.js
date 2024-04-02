@@ -46,7 +46,7 @@ let mainNavLinks = document.querySelectorAll(".page-link");
 let mainSections = document.querySelectorAll(".sections");
 
 window.addEventListener("scroll", event => {
-    let fromTop = window.scrollY - 1;
+    let fromTop = window.scrollY + 100;
 
     mainNavLinks.forEach(link => {
         let section = document.querySelector(link.hash);
