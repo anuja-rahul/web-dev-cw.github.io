@@ -46,14 +46,13 @@ let mainNavLinks = document.querySelectorAll(".page-link");
 let mainSections = document.querySelectorAll(".sections");
 
 window.addEventListener("scroll", event => {
-    let fromTop = window.scrollY;
+    let fromTop = window.scrollY - 1;
 
     mainNavLinks.forEach(link => {
         let section = document.querySelector(link.hash);
 
     if (
-        section.offsetTop <= fromTop + 55 &&
-        section.offsetTop + section.offsetHeight > fromTop + 55
+        section.offsetTop <= fromTop + 55 && section.offsetTop + section.offsetHeight > fromTop + 55
     ) {
         link.classList.add("active");
     } else {
