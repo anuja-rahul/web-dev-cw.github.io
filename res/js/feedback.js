@@ -30,6 +30,7 @@ function previewForm() {
     };
 
 // https://web3forms.com/platforms/javascript-contact-form
+
 const form = document.getElementById('form-feedback');
 const result = document.getElementById('result');
 
