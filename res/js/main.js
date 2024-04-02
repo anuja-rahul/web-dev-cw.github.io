@@ -51,13 +51,14 @@ window.addEventListener("scroll", event => {
     mainNavLinks.forEach(link => {
         let section = document.querySelector(link.hash);
 
-    if (
-        section.offsetTop <= fromTop + 55 && section.offsetTop + section.offsetHeight > fromTop + 55
-    ) {
-        link.classList.add("active");
-    } else {
-        link.classList.remove("active");
-    }
+        if (
+            section.offsetTop <= fromTop + 55 && 
+            section.offsetTop + section.offsetHeight > fromTop + 55
+        ) {
+            link.classList.add("active");
+        } else {
+            link.classList.remove("active");
+        }
     });
 });
 
