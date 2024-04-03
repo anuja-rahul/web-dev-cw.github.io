@@ -17,7 +17,7 @@ function previewForm() {
         keyDivholder.classList.add('preview-key');
         valueDivholder.classList.add('preview-value');
 
-        keyDiv.textContent = key + ':';
+        keyDivholder.textContent = key + ':';
         valueDivholder.textContent = value;
 
         previewItem.appendChild(keyDivholder);
