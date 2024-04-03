@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --primary-color: #0F0F0F;
+    --secondary-color: #232D3F;
+    --third-color: #005B41;
+    --fourth-color: #008170;
+    --text-color: #efefef;
+}
+
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100vw;
+    background-color: #080808;
+    font-size: 16px;
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 1s ease-in-out;
+}
+
+.hidden-bottom{
+    transform: translateY(150%);
+}
+
+.hidden-top{
+    transform: translateY(-150%);
+    transition: 1.2s !important;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+#main{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: 180vh;
+    text-align: justify;
+    color: var(--text-color);
+    background: linear-gradient(120deg, 
+    rgba(35, 45, 63, 0.5), rgba(0, 91, 65, 0.4), 
+    rgba(0, 129, 112, 0.6), rgba(0, 91, 65, 0.4), 
+    rgba(35, 45, 63, 0.5)), 
+    url("../media/editor_01.jpg") center no-repeat;
+    background-size: cover;
+}
+
+#main .title{
+    margin-top: 10px;
+    font-size: 3rem;
+    text-shadow: -12px 10px 10px rgba(0, 36, 26, 0.9);
+    transition: .5s;
+}
+
+#main .title:hover{
+    transform: translateY(-6px);
+}
+
+#main .content{
+    padding: 25px;
+    border-radius: 45px;
+    border: 2px solid var(--fourth-color);
+    margin: 0 30px;
+    box-shadow:  -10px 10px 20px rgba(15, 15, 15, 0.6);
+    backdrop-filter: blur(5px);
+    min-width: 25%;
+    text-align: center;
+}
+
+#main .content h2{
+    margin: 30px 0;
+}
+
+#main .content h4{
+    text-shadow: -8px 8px 15px rgba(0, 36, 26, 0.9);
+}
+
+#main .content .description{
+    margin-top: 30px;
+}
+
+.content h4:nth-child(1){
+    transition-delay: 100ms;
+    font-size: 1.6rem;
+}
+.content h4:nth-child(2),
+#main .content:nth-child(2){
+    transition-delay: 200ms;
+}
+.content h4:nth-child(3),
+#main .content:nth-child(3){
+    transition-delay: 350ms;
+}
+.content h4:nth-child(4),
+#main .content:nth-child(4){
+    transition-delay: 500ms;
+}
+.content h4:nth-child(5),
+#main .content:nth-child(5){
+    transition-delay: 650ms;
+}
+
+.space{
+    height: 10vh;
+}
+
+/* Small Screens */
+@media only screen and (max-width: 990px){
+
+    body{
+        font-size: 12px;
+    }
+    #main .title{
+        font-size: 2rem;
+    }
+    .content h4:nth-child(1){
+        font-size: 1.3rem;
+    }
+}
