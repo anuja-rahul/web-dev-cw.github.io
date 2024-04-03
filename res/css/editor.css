@@ -118,6 +118,16 @@ body {
     height: 10vh;
 }
 
+.content a{
+    text-decoration: none;
+    color: var(--text-color);
+    transition: .5s;
+}
+
+a:hover{
+    color: var(--fourth-color);
+}
+
 /* Small Screens */
 @media only screen and (max-width: 990px){
 
