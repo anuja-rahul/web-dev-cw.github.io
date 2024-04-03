@@ -10,18 +10,18 @@ function previewForm() {
         if (key!="access_key"){
 
         var previewItem = document.createElement('div');
-        var keyDiv = document.createElement('div');
-        var valueDiv = document.createElement('div');
+        var keyDivholder = document.createElement('div');
+        var valueDivholder = document.createElement('div');
 
         previewItem.classList.add('preview-item');
-        keyDiv.classList.add('preview-key');
-        valueDiv.classList.add('preview-value');
+        keyDivholder.classList.add('preview-key');
+        valueDivholder.classList.add('preview-value');
 
         keyDiv.textContent = key + ':';
-        valueDiv.textContent = value;
+        valueDivholder.textContent = value;
 
-        previewItem.appendChild(keyDiv);
-        previewItem.appendChild(valueDiv);
+        previewItem.appendChild(keyDivholder);
+        previewItem.appendChild(valueDivholder);
         preview.appendChild(previewItem);
     }});
     // preview.classList.remove('hidden');
