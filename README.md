@@ -23,4 +23,11 @@
 
 visit us:
 
+Home:
 https://anuja-rahul.github.io/web-dev-cw.github.io/
+
+Feedback:
+https://anuja-rahul.github.io/web-dev-cw.github.io/feedback.html
+
+Page Editor:
+https://anuja-rahul.github.io/web-dev-cw.github.io/editor.html
